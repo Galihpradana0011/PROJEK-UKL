@@ -1,0 +1,194 @@
+:root{
+    --primary:#FF0000;
+    --bg:#F1F9F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F1F9F9;
+    font-style: italic;
+}
+ 
+.navbar .navbar-nav a{
+    position: relative  ;
+    font-size: 16px;
+    color: beige;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.navbar .navbar-extra a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a::hover{
+    color: var(--primary);
+}
+
+.menu{
+    padding: 8rem 7% 1.4rem;
+    color: #ff3300;
+}
+
+.menu h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.menu h2 span{
+    color: rgb(255, 145, 0);
+}
+
+.menu .row{
+    display: flex;
+}
+
+.menu .row .about-img{
+    flex: 1 1 35rem;
+}
+
+.menu .row .about-img img{
+    width: 100%;
+}
+
+.menu .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.menu .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.menu .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: black;
+}
+
+.menu h2{
+    margin-bottom: 1rem;
+}
+
+.menu p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.6;
+    color: black;
+}
+
+.menu .row{
+    display: flex;
+    
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.menu .row .menu-card img{
+    border-radius: 50%;
+    width: 35%;
+}
+
+.menu .row .menu-card .menu-card-title{
+    margin-top: 1.5rem auto 0.5rem;
+}
+
+footer{
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer.socials{
+    padding: 1rem 0;
+}
+
+footer .socials a{
+    color: #eee;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover{
+    color: var(--bg);
+}
+
+footer .links{
+    margin-bottom: 1.4rem;
+}
+
+footer .links a{
+    color: #eee;
+    padding: 0.7rem 1rem;
+
+}

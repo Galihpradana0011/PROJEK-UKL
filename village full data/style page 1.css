@@ -1,0 +1,178 @@
+:root{
+    --primary:#FF0000;
+    --bg:#F1F9F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F1F9F9;
+    font-style: italic;
+}
+ 
+.navbar .navbar-nav a{
+    position: relative  ;
+    font-size: 16px;
+    color: beige;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.navbar .navbar-extra a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a::hover{
+    color: var(--primary);
+}
+
+.pesan {
+    padding: 8rem 9% 1.5rem;
+    color: #FF0000;
+}
+
+.pesan h2{
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.pesan p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 500;
+    line-height: 1.6;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.pesan .row{
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+    
+}
+
+.pesan .row .map{
+    flex: 1 1 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pesan .row form .input-grub{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.pesan .row form .input-grub input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background: none;
+}
+
+.pesan .row form{
+    flex: 1 1 30rem;
+    padding: 5rem 2rem ;
+    text-align: center;
+}
+
+.contact .row form .btn{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #eee;
+    background-color: aqua;
+}
+
+footer{
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer.socials{
+    padding: 1rem 0;
+}
+
+footer .socials a{
+    color: #eee;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover{
+    color: var(--bg);
+}
+
+footer .links{
+    margin-bottom: 1.4rem;
+}
+
+footer .links a{
+    color: #eee;
+    padding: 0.7rem 1rem;
+
+}
